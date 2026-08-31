@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Form 1</title>
+
+    
+       <style>
+
+        body {
+           margin: 0;
+           padding: 20px;
+          box-sizing: border-box;
+        }
+
+        #container {
+          max-width:800px;
+          margin: 0 auto;
+        }
+
+        .box {
+            width: 100%;
+            margin-bottom: 10px;
+            border-style:dotted;
+            border-radius: 5px;
+        }
+
+        
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 2px;
+        }
+
+        .header{
+          display:flex;
+          justify-content: space-between;
+          align-items:center;
+        }
+
+        #empty {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        .bigger {
+            height: 100px;
+        }
+
+
+        .title span {
+          display: block;
+          width:12ch;
+          text-align:Left;
+        }
+
+        .title span:first-child {
+          font-family: arial, sans-serif, cursive;
+          color: #000000;
+          font-size: 50px;
+        }
+
+        .title span:last-child {
+          font-family: arial,, cursive;
+          color: #ffffff;
+          text-shadow: 2px 2px 0 black;
+          font-size: 50px;
+        }
+          
+      </style> 
+    
+</head>
+<body>
+ <form action="">
+    <div id="container">
+
+      <div class="header">
+         
+      <h1 class="title">
+         <span>PERSONAL</span> 
+         <span>INFORMATION</span>
+        </h1>
+       <span id="empty" aria-hidden="true">
+         </span> 
+      
+      </div>
+
+    <div >
+     <label for="name" style="font-weight: bold;">FULL NAME:</label>  <br> 
+          <input class="box" id="name" type="text" required>
+    </div>
+    
+      <div>
+           <label for="address" style="font-weight: bold;">ADDRESS:</label>  <br> 
+          <input class="box bigger" id="address" type="text" required>
+      </div>
+      
+        <div>
+             <label for="mobile" style="font-weight: bold;">MOBILE NO:</label>  <br> 
+          <input class="box" id="mobile" type="tel" name="mobile" required>
+        </div>
+        
+          <div>
+               <label for="EMAIL" style="font-weight: bold;">EMAIL:</label>  <br> 
+          <input class="box" id="EMAIL" type="email" name="EMAIL" required>
+          </div>
+          
+            <div>
+                 <label for="important" style="font-weight: bold;">IMPORTANT NOTE:</label>  <br> 
+          <input class="box bigger" id="important" type="text" required>
+            </div>
+
+            </div>
+            </form>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Practice Table</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f0f0;
+             font-family: 'Inter Tight', sans-serif;
+        }
+
+        .overall {
+            max-width: 70%;
+            padding: 30px;
+            margin: 0 auto;
+        }
+
+         .tablecon  {
+            
+            border: 1px solid #c9bbbb;
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin-top: 10px;
+            overflow: hidden;
+         }
+
+         table {
+            max-width: 100%;
+            height: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+              overflow-x: scroll;
+
+
+         }
+         
+         span {
+              border-radius: 50%; 
+              border: 1px solid #070707;
+              padding: 8px;
+              font-weight: bold;
+              font-size: 12px;
+        }
+
+        #a {
+            color: #771eeb;
+            background-color: #e9d7ff;
+            border: none;
+        }
+
+        #b {
+            color: #056d13;
+            background-color: #d7ffdf;
+            border: none;
+        }
+
+        #c {
+            color: #835101;
+            background-color: #fff0c5;
+            border: none;
+        }
+
+        #d {
+            color: #1511c9;
+            background-color: #c4defc;
+            border: none;
+        }
+
+        #e {
+            color: #6b052c;
+            background-color: #f8dee8;
+            border: none;
+        }
+
+        #f {
+            color: #056d13;
+            background-color: #f0fdf2;
+            border: none;
+        }
+
+        #g {
+            color: #913e08;
+            background-color: #f8e2d5;
+            border: none;
+        }
+
+        .ac {
+            color: #056d13;
+            background-color: #f0fdf2;
+            border: 1px solid #99f5a5;
+            border-radius: 20px;
+        }
+
+        .on {
+            color: #835101;
+            background-color: #fff0c5;
+            border: 1px solid #f8e2d5;
+            border-radius: 20px;
+        }
+
+        .in {
+            color: #666666;
+            background-color:  #f7f7f7;
+            border: 1px solid  #c5c1c1;
+            border-radius: 20px;
+        }
+
+         .dept1 {
+            color: #6f06f8;
+        }
+
+        .dept2 {
+            color: #0534ce;
+        }
+
+        .dept3 {
+            color: #018308;
+        }
+
+        .dept4 {
+            color: #1511c9;
+        }
+
+        .dept5 {
+            color: #6b052c;
+        }
+
+        .dept6 {
+            color: #056d13;
+        }
+
+        .dept7 {
+            color: #913e08;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: justify;
+            vertical-align: middle;
+            width: 20%;
+            
+            word-wrap: break-word;
+            font-size: 14px;
+            letter-spacing: 1px;
+          
+        }
+
+        td, th, caption {
+            height: 50px;
+        }
+
+        tr:hover {
+            background-color: #f7f7f7;
+        }
+
+        .thead {
+            color: #666666;
+            background-color: #f7f7f7;
+        }
+
+        td:nth-child(odd) {
+             color:  #666666;
+        }
+
+        .number {
+            caption-side:bottom;
+            text-align:left;
+            vertical-align: middle;
+            padding: 10px;
+             background-color: #f7f7f7;
+        }
+
+        .page {
+            font-size: 14px;
+            color: #666666;
+            padding: 5px;
+        }
+
+        .category {
+            caption-side:top;
+            text-align:left;
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        li {
+            float: left;
+            margin: 10px;
+
+        }
+
+        h5 {
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+
+        
+        </style>
+</head>
+<body>
+
+    <div class="overall">
+
+        <h5 style = "color: #c7c7c7; text-transform: uppercase;">human resources . q3 2026</h5>
+        <h2>Employee Directory</h2>
+         <h5 style = "color: #a7a3a3; text-transform: uppercase;">7 records - last synced today at 09:41</h5>
+
+
+        <div class="tablecon">
+        <table>
+        <caption class="page category">
+            <ul>
+                <li style="list-style-type: none;">All</li>
+                <li style="list-style-type: none;">Design</li>
+                <li style="list-style-type: none;">Engineering</li>
+                <li style="list-style-type: none;">Product</li>
+                <li style="list-style-type: none;">Analytics</li>
+             </ul>
+            </caption>
+
+          <caption class="page number">
+            Page 1 of 1
+          </caption>
+
+        <tr class="thead">
+            <th>ID</th>
+            <th>NAME</th>
+            <th>ROLE</th>
+            <th>DEPT</th>
+            <th>STATUS</th>
+        </tr>
+
+        <tr>
+            <td>EMP-001</td>
+            <td><span id="a">ML</span> Mara Lindqvist</td>
+            <td>Product Designer</td>
+            <td class="dept1">Design</td>
+            <td> <span class="ac">Active</span></td>
+        </tr>
+
+         <tr>
+            <td>EMP-002</td>
+            <td><span id="b">JO</span> Jonas Okafor</td>
+            <td>Frontend Engineer</td>
+            <td class="dept2">Engineering</td>
+            <td> <span class="ac">Active</span></td>
+        </tr>
+
+         <tr>
+            <td>EMP-003</td>
+            <td><span id="c">PN</span> Priya Niar</td>
+            <td>Data Analyst</td>
+            <td class="dept3">Analytics</td>
+            <td> <span class="on">On leave</span></td>
+        </tr>
+
+         <tr>
+            <td>EMP-004</td>
+            <td><span id="d">TC</span> Tom Carvalho</td>
+            <td>Engineering Lead</td>
+            <td class="dept2">Engineering</td>
+            <td> <span class="ac">Active</span></td>
+        </tr>
+
+         <tr>
+            <td>EMP-005</td>
+            <td><span id="e">SA</span> Selin Aslan</td>
+            <td>UX Researcher</td>
+            <td class="dept1">Design</td>
+            <td> <span class="ac">Active</span></td>
+        </tr>
+
+         <tr>
+            <td>EMP-006</td>
+            <td><span id="f">DY</span> Derek Yuen</td>
+            <td>Backend Engineer</td>
+            <td class="dept2">Engineering</td>
+            <td> <span class="in">Inactive</span></td>
+        </tr>
+
+        <tr>
+            <td>EMP-007</td>
+            <td><span id="g">AD</span> Amara Diallo</td>
+            <td>Product Manager</td>
+            <td class="dept1">Design</td>
+            <td> <span class="ac">Active</span></td>
+        </tr>
+    </table>
+    </div>
+        </div>
+
+</body>
+</html>
